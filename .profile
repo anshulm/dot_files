@@ -45,6 +45,11 @@ alias etags="ctags -e \`find (app|spec|lib|config)/*/.rb\`"
 #GIT Aliases
 alias gs='git status'
 alias gpr='git pull --rebase'
+alias gs='git status'
+alias gpr='git pull --rebase'
+alias lg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+alias lol='git log --graph --decorate --pretty=oneline --abbrev-commit'
+alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 shopt -s histappend
 PROMPT_COMMAND='history -a'

@@ -32,4 +32,6 @@ README.md
 .subversion/
 .subversion_IDEA/
 .yasnippets
+.Xauthority
+.serverauth.30505
 .viminfo
