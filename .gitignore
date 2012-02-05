@@ -1,5 +1,6 @@
 /*
 !.**
+README.md
 .CFUserTextEncoding
 .DS_Store
 .RSA/
@@ -31,3 +32,4 @@
 .subversion/
 .subversion_IDEA/
 .yasnippets
+.viminfo
