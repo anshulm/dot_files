@@ -1,0 +1,7 @@
+cd ..
+rake spec
+rake spec SPEC='/Users/irfan/dev/ruby/ror/abril/profiles/spec/profiles_spec.rb' SPEC_OPTS='--format specdoc --reverse'
+ls
+ls
+##DATA##/Projects/TW/iba/store $ 
+rvm
