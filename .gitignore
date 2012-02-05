@@ -34,3 +34,4 @@
 .Xauthority
 .serverauth.30505
 .viminfo
+.emacs.d/.smex-items
