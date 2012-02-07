@@ -8,7 +8,8 @@
 (require 'campfire)
 (require 'rvm)
 (require 'rspec-mode)
-
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
 (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
 (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
