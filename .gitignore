@@ -37,3 +37,5 @@
 .emacs.d/.smex-items
 .emacs.d/auto-save-list/
 .Trash/
+.emacs.d/#init.el#
+.emacs.d/places
