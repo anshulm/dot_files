@@ -21,7 +21,6 @@
 
 (load custom-file 'noerror)
 (line-number-mode)
-(linum-mode)
 (highline-mode)
 (cua-mode t)
 (yas/global-mode 1) 
@@ -72,5 +71,5 @@
 (autopair-global-mode 1)
 ;; color themes
 (require 'color-theme)
-(load-file "~/.emacs.d/elpa/color-theme-twilight-0.1/color-theme-twilight.el")
-(color-theme-twilight)
+;;(load-file "~/.emacs.d/elpa/color-theme-twilight-0.1/color-theme-twilight.el")
+;;(color-theme-twilight)
