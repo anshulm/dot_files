@@ -39,3 +39,4 @@
 .Trash/
 .emacs.d/#init.el#
 .emacs.d/places
+.pry_history
