@@ -6,12 +6,19 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="suvash"
+#ZSH_THEME="superjarin"
 
 #General Alises
 alias wd="cd ~/../../\#\#DATA\#\#/Projects/"
 alias rtd="cd ~/"
-alias wda="cd ~/../../\#\#DATA\#\#/Projects/TW/iba"
+#alias wda="cd ~/../../\#\#DATA\#\#/Projects/TW/iba"
 alias travel="cd ~/../../\#\#DATA\#\#/Misc/Travel"
+
+#functions
+function goto() {
+    cd ~/../../\#\#DATA\#\#/Projects/TW/iba/$1 && $2 && $3
+}
 
 #GIT Aliases
 alias gs="git status"
@@ -22,7 +29,7 @@ alias gpr="git pull --rebase"
 alias lol="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-shopt -s histappend
+
 PROMPT_COMMAND='history -a'
 
 
