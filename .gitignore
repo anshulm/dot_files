@@ -38,5 +38,12 @@
 .emacs.d/auto-save-list/
 .Trash/
 .emacs.d/#init.el#
-.emacs.d/places
 .pry_history
+.emacs.d/places
+.project
+.zcompdump
+.zsh-update
+.zsh_history
+.zsh_history
+.zshrc.pre-oh-my-zsh
+.emacs.d/places/*
