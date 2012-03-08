@@ -10,14 +10,14 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="superjarin"
 
 #General Alises
-alias wd="cd ~/../../\#\#DATA\#\#/Projects/"
+alias wd="cd ~/../../pdata/Projects/"
 alias rtd="cd ~/"
-#alias wda="cd ~/../../\#\#DATA\#\#/Projects/TW/iba"
-alias travel="cd ~/../../\#\#DATA\#\#/Misc/Travel"
+#alias wda="cd ~/../../pdata/Projects/TW/iba"
+alias travel="cd ~/../../pdata/Misc/Travel"
 
 #functions
 function goto() {
-    cd ~/../../\#\#DATA\#\#/Projects/TW/iba/$1 && $2 && $3
+    cd ~/../../pdata/Projects/TW/iba/$1 && $2 && $3
 }
 
 #GIT Aliases
@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx bundler compleat gem grails rails rails3 redis-cli rvm yum)
+plugins=(git osx bundler compleat gem grails rails rails3 redis-cli rvm yum ibaAnshulm)
 
 source $ZSH/oh-my-zsh.sh
 
