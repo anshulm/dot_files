@@ -8,6 +8,8 @@
 (require 'rvm)
 (require 'rspec-mode)
 (require 'yaml-mode)
+(require 'slim-mode)
+(set-face-attribute 'default nil :font "Inconsolata" :height 140)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
 (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
