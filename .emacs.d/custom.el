@@ -16,8 +16,7 @@
  '(safe-local-variable-values (quote ((ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t) (encoding . utf-8))))
  '(standard-indent 2)
  '(tab-width 2)
- '(yas/global-mode t nil (yasnippet))
- '(yas/root-directory "~/.yasnippets/" nil (yasnippet)))
+)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
