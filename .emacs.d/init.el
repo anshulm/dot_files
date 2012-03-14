@@ -5,7 +5,6 @@
 (require 'marmalade)
 (require 'nginx-mode)
 (require 'project-mode)
-(require 'campfire)
 (require 'rvm)
 (require 'rspec-mode)
 (require 'yaml-mode)
@@ -14,6 +13,7 @@
 (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
 (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
 
+;;Auto_complete
 (add-to-list 'load-path "~/.emacs.d/Plugins/AutoComplete/")
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/Plugins/AutoComplete//ac-dict")
@@ -23,9 +23,7 @@
 (line-number-mode)
 (highline-mode)
 (cua-mode t)
-(yas/global-mode 1) 
 (set-face-background 'highline-face "#08252F")
-(menu-bar-mode t)
 
 (setq inhibit-startup-message t) 
 
@@ -71,5 +69,4 @@
 (autopair-global-mode 1)
 ;; color themes
 (require 'color-theme)
-;;(load-file "~/.emacs.d/elpa/color-theme-twilight-0.1/color-theme-twilight.el")
-;;(color-theme-twilight)
+(load-file "/Users/Admin/.emacs.d/themes/zen-mod-theme.el")

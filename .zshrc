@@ -14,7 +14,7 @@ alias wd="cd ~/../../pdata/Projects/"
 alias rtd="cd ~/"
 #alias wda="cd ~/../../pdata/Projects/TW/iba"
 alias travel="cd ~/../../pdata/Misc/Travel"
-
+alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
 #functions
 function goto() {
     cd ~/../../pdata/Projects/TW/iba/$1 && $2 && $3
@@ -28,6 +28,8 @@ alias gpr="git pull --rebase"
 #alias lg="git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative"
 alias lol="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
+alias twgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulm@thoughtworks.com'"
+alias persgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulmengi@gmail.com'"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 PROMPT_COMMAND='history -a'
@@ -57,3 +59,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/Users/Admin/.rvm/gems/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/gems/ruby-1.9.3-p0@global/bin:/Users/Admin/.rvm/rubies/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/share/groovy/bin:/usr/share/grails/bin:/usr/X11/bin:/usr/local/git/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export RUBYOPT=-Ku
