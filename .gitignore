@@ -47,3 +47,10 @@
 .zsh_history
 .zshrc.pre-oh-my-zsh
 .emacs.d/places/*
+.zshrc~
+.zlogin
+.emacs.mar_15_2012.bak/
+.emacs.d/backups/
+.bashrc
+.bash_login
+.vim/.netrwhist
