@@ -54,3 +54,4 @@
 .bashrc
 .bash_login
 .vim/.netrwhist
+.emacs.d/ac-comphist.dat
