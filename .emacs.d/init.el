@@ -20,12 +20,13 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/Plugins/AutoComplete//ac-dict")
 (ac-config-default)
+(define-key ac-complete-mode-map "\t" 'ac-complete)
+(define-key ac-complete-mode-map "\r" nil)
 
 (load custom-file 'noerror)
 (line-number-mode)
 (highline-mode)
 (cua-mode t)
-(set-face-background 'highline-face "#08252F")
 
 (setq inhibit-startup-message t) 
 
