@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="josh"
+#ZSH_THEME="gentoo"
 #ZSH_THEME="suvash"
 #ZSH_THEME="superjarin"
 
@@ -26,6 +27,8 @@ alias gpr="git pull --rebase"
 alias gs="git status"
 alias gpr="git pull --rebase"
 #alias lg="git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative"
+alias gglog="git log --graph --pretty=format:'%C(yellow)%h%Creset  %C(cyan)%s%n         %Cgreen%an%Cred  %Creset%cd%n'"
+alias glog="git log --pretty=format:'%C(yellow)%h%Creset  %C(cyan)%s%n         %Cgreen%an%Cred  %Creset%cd%n'"
 alias lol="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
 alias twgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulm@thoughtworks.com'"
