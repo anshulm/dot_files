@@ -16,6 +16,7 @@ alias rtd="cd ~/"
 #alias wda="cd ~/../../pdata/Projects/TW/iba"
 alias travel="cd ~/../../pdata/Misc/Travel"
 alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
+alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
 #functions
 function goto() {
     cd ~/../../pdata/Projects/TW/iba/$1 && $2 && $3
@@ -26,12 +27,13 @@ alias gs="git status"
 alias gpr="git pull --rebase"
 alias gs="git status"
 alias gpr="git pull --rebase"
-alias gglog="git log --graph --pretty=format:'%C(yellow)%h%Creset  %C(red)%s%n         %Cgreen%an%Cred  %C(cyan)%cd'"
+alias gglog="git log --graph --pretty=format:'%C(yellow)%h%Creset  %C(cyan)%s%n%Cgreen%an%Cred  %C(magenta)%cd'"
 alias glog="git log --pretty=format:'%C(yellow)%h%Creset  %C(red)%s%n         %Cgreen%an%Cred  %C(cyan)%cd'"
 alias lol="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
 alias twgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulm@thoughtworks.com'"
 alias persgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulmengi@gmail.com'"
+alias ggcc="git checkout spec/cassettes/ && git checkout features/cassettes/"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 PROMPT_COMMAND='history -a'
@@ -55,9 +57,10 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx bundler compleat gem grails rails rails3 redis-cli rvm yum ibaAnshulm)
+plugins=(git osx bundler compleat gem grails rails rails3 redis-cli rvm ibaAnshulm brew)
 
 source $ZSH/oh-my-zsh.sh
+fortune
 
 # Customize to your needs...
 export PATH=/Users/Admin/.rvm/gems/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/gems/ruby-1.9.3-p0@global/bin:/Users/Admin/.rvm/rubies/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/share/groovy/bin:/usr/share/grails/bin:/usr/X11/bin:/usr/local/git/bin
