@@ -57,3 +57,4 @@
 .emacs.d/ac-comphist.dat
 .vim/.netrwhist~
 .sh_history
+.npm/
