@@ -9,7 +9,7 @@ ZSH_THEME="josh"
 #ZSH_THEME="gentoo"
 #ZSH_THEME="suvash"
 #ZSH_THEME="superjarin"
-
+#ZSH_THEME='robbyrussell'
 #General Alises
 alias wd="cd ~/../../pdata/Projects/"
 alias rtd="cd ~/"
@@ -57,7 +57,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx bundler compleat gem grails rails rails3 redis-cli rvm ibaAnshulm brew)
+plugins=(git osx bundler compleat gem grails rails rails3 redis-cli rvm ibaAnshulm brew history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 fortune
