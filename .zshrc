@@ -18,9 +18,12 @@ alias rtd="cd ~/"
 alias travel="cd ~/../../pdata/Misc/Travel"
 alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
 alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
+
+#iba Specific aliases, git aliases and functions
 alias seedall="curl http://localhost:5100/seed && curl http://localhost:5500/seed"
 
-#functions
+alias ggcc="git checkout spec/cassettes/ && git checkout features/cassettes/"
+
 function goto() {
     cd ~/../../pdata/Projects/TW/iba/$1 && $2 && $3
 }
@@ -36,7 +39,6 @@ alias lol="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
 alias twgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulm@thoughtworks.com'"
 alias persgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulmengi@gmail.com'"
-alias ggcc="git checkout spec/cassettes/ && git checkout features/cassettes/"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 PROMPT_COMMAND='history -a'
