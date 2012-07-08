@@ -10,6 +10,7 @@ ZSH_THEME="josh"
 #ZSH_THEME="suvash"
 #ZSH_THEME="superjarin"
 #ZSH_THEME='robbyrussell'
+
 #General Alises
 alias wd="cd ~/../../pdata/Projects/"
 alias rtd="cd ~/"
@@ -17,6 +18,8 @@ alias rtd="cd ~/"
 alias travel="cd ~/../../pdata/Misc/Travel"
 alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
 alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias seedall="curl http://localhost:5100/seed && curl http://localhost:5500/seed"
+
 #functions
 function goto() {
     cd ~/../../pdata/Projects/TW/iba/$1 && $2 && $3
