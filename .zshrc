@@ -18,6 +18,7 @@ alias rtd="cd ~/"
 alias travel="cd ~/../../pdata/Misc/Travel"
 alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
 alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias sublime='open -a Sublime\ Text\ 2'
 
 #iba Specific aliases, git aliases and functions
 alias seedall="curl http://localhost:5100/seed && curl http://localhost:5500/seed"
