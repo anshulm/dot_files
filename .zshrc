@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="josh"
+ZSH_THEME="AMCustom"
+#ZSH_THEME="josh"
 #ZSH_THEME="gentoo"
 #ZSH_THEME="suvash"
 #ZSH_THEME="superjarin"
@@ -18,7 +19,7 @@ alias rtd="cd ~/"
 alias travel="cd ~/../../pdata/Misc/Travel"
 alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
 alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
-alias sublime='open -a Sublime\ Text\ 2'
+alias s='open -a Sublime\ Text\ 2'
 
 #iba Specific aliases, git aliases and functions
 alias seedall="curl http://localhost:5100/seed && curl http://localhost:5500/seed"

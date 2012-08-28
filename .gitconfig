@@ -8,3 +8,5 @@
     	interactive = true
 [help]
 	autocorrect = 20
+[core]
+	excludesfile = /Users/Admin/.gitignore_global
