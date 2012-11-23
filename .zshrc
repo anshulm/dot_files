@@ -22,8 +22,9 @@ alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
 alias s='open -a Sublime\ Text\ 2'
 
 #iba Specific aliases, git aliases and functions
-alias seedall="curl http://localhost:5100/seed && curl http://localhost:5500/seed"
-
+alias seedpaid="curl -u 'api_admin:password' --basic http://localhost:5100/seed && curl  -u 'api_admin:password' --basic http://localhost:5500/seed"
+alias seedfree="curl -u 'api_admin:password' --basic http://localhost:5100/seed'?'newspaper_count=3'&'book_count=2'&'magazine_count=1'&'free=true"
+alias seedall="seedpaid && seedfree"
 alias ggcc="git checkout spec/cassettes/ && git checkout features/cassettes/"
 
 function goto() {
@@ -70,7 +71,7 @@ source $ZSH/oh-my-zsh.sh
 fortune
 
 # Customize to your needs...
-export PATH=/Users/Admin/.rvm/gems/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/gems/ruby-1.9.3-p0@global/bin:/Users/Admin/.rvm/rubies/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/share/groovy/bin:/usr/share/grails/bin:/usr/X11/bin:/usr/local/git/bin
+export PATH=/Users/Admin/.rvm/gems/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/gems/ruby-1.9.3-p0@global/bin:/Users/Admin/.rvm/rubies/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/share/groovy/bin:/usr/share/grails/bin:/usr/X11/bin:/usr/local/git/bin:/usr/local/sbin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export RUBYOPT=-Ku
