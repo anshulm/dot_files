@@ -6,7 +6,13 @@
     	status = auto
     	branch = auto
     	interactive = true
+        ui = auto
 [help]
 	autocorrect = 20
 [core]
 	excludesfile = /Users/Admin/.gitignore_global
+[alias]
+        grep = grep --color=auto
+
+[core]
+    pager = less -+$LESS -FRX
