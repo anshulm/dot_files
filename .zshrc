@@ -26,6 +26,7 @@ alias seedpaid="curl -u 'api_admin:password' --basic http://localhost:5100/seed 
 alias seedfree="curl -u 'api_admin:password' --basic http://localhost:5100/seed'?'newspaper_count=3'&'book_count=2'&'magazine_count=1'&'free=true"
 alias seedall="seedpaid && seedfree"
 alias ggcc="git checkout spec/cassettes/ && git checkout features/cassettes/"
+alias rakeसुबह="rake old_morning"
 
 function goto() {
     cd ~/../../pdata/Projects/TW/iba/$1 && $2 && $3
@@ -75,3 +76,12 @@ export PATH=/Users/Admin/.rvm/gems/ruby-1.9.3-p0/bin:/Users/Admin/.rvm/gems/ruby
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export RUBYOPT=-Ku
+export LANG="en_US.UTF-8"
+set meta-flag on
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# for autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+autoload -U compinit; compinit
