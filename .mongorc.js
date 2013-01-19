@@ -1,13 +1,3 @@
-/* 
- *
- * Mongo Hacker
- * MongoDB Shell Enhancements for Hackers 
- *
- * Tyler J. Brock - 2013
- *
- * http://tylerbrock.github.com/mongo-hacker
- *
- */
 
 __ansi = {
     csi: String.fromCharCode(0x1B) + '[',
