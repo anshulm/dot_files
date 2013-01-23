@@ -1,0 +1,54 @@
+---
+version: 2
+clusters:
+
+  production_frontend_blue:
+    broadcast: true
+    hosts:
+      - iba2_prod01
+      - iba2_prod02
+      - iba2_prod03
+      - iba2_fe01
+
+  production_frontend_green:
+    broadcast: true
+    hosts:
+      - iba2_fe02
+      - iba2_fe03
+      - iba2_fe04
+      - iba2_fe05
+      - iba2_fe06
+
+  production_backend_blue:
+    broadcast: true
+    hosts:
+      - iba2_prod04
+      - iba2_prod05
+      - iba2_prod06
+      - iba2_prod07
+      - iba2_prod08
+      - iba2_be01
+
+  production_backend_green:
+    broadcast: true
+    hosts:
+      - iba2_be02
+      - iba2_be03
+      - iba2_be04
+      - iba2_be05
+      - iba2_be06
+      - iba2_be07
+      - iba2_be08
+
+  production_dbs:
+    broadcast: true
+    hosts:
+      - iba2_mongodb01
+      - iba2_mongodb02
+      - iba2_mongodb03
+
+  production_varnishes:
+    broadcast: true
+    hosts:
+      - iba2_varnish01
+      - iba2_varnish02
