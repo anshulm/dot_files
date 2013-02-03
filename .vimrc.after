@@ -22,7 +22,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 "IntentGuide - https://github.com/Yggdroot/indentLine
-let g:indentLine_char = 'B'
+let g:indentLine_char = '|'
 "Fix - This
 "autocmd VimEnter,Colorscheme * :hi Conceal ctermfg=28 ctermbg=144
 
