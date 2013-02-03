@@ -1,0 +1,3 @@
+--ignore-dir=spec/cassettes
+--ignore-dir=features/cassettes
+--ignore-dir=spec/coverage
