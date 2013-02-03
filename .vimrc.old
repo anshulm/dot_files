@@ -1,0 +1,74 @@
+set nocompatible               " be iMproved
+ filetype off                   " required!
+
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+
+ " let Vundle manage Vundle
+ " required! 
+ Bundle 'gmarik/vundle'
+
+ " My Bundles here:
+ "
+ " original repos on github
+ Bundle 'tpope/vim-fugitive'
+ Bundle 'Lokaltog/vim-easymotion'
+ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+ Bundle 'tomasr/molokai'
+ Bundle 'tpope/vim-rails.git'
+ Bundle 'scrooloose/nerdtree'
+ Bundle 'vim-scripts/FuzzyFinder'
+ Bundle 'tomtom/checksyntax_vim'                                                  
+ Bundle 'vim-ruby/vim-ruby'                                                       
+ Bundle 'tpope/vim-rails'                                                         
+ Bundle 'slim-template/vim-slim'                                                     
+ Bundle 'groenewege/vim-less'                                                     
+ Bundle 'rodjek/vim-puppet'
+ Bundle 'carlhuda/janus'
+
+ " vim-scripts repos
+ Bundle 'L9'
+ Bundle 'FuzzyFinder'
+ " non github repos
+ Bundle 'git://git.wincent.com/command-t.git'
+ " ...
+
+ filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+highlight RedundantWhitespace ctermbg=red guibg=red
+set nocompatible
+set bs=2
+set background=dark
+set wrapmargin=8
+syntax on
+set ruler
+set number
+set wrap
+"set smartindent
+"filetype indent on
+set incsearch
+set ignorecase
+set smartcase
+set statusline=%n:\ %f%m%r%h%w\ [%Y,%{&fileencoding},%{&fileformat}]\ [%l-%L,%v][%p%%]
+"set autoindent
+set hls
+colorscheme molokai
+set ruler
+set rulerformat=%25(%n%m%r:\ %Y\ [%l,%v]\ %p%%%)
+set showcmd
+set wildmenu
+set cmdheight=5
+set mouse=a
+autocmd InsertLeave * se nocul
+autocmd InsertEnter * se cul
+set showmatch
+set guifont=Monaco:h10
+set guioptions-=T " Removes top toolbar
+set guioptions-=r " Removes right hand scroll bar
+set go-=L " Removes left hand scroll bar
