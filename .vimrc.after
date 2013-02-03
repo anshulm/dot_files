@@ -5,17 +5,27 @@
 
 
 colorscheme molokai
-let g:copypath_copy_to_unnamed_register = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*spec/cassettes/*,*features/cassettes/*,*/coverage/**,.git
+set nocompatible "Not Compatible with vi.
+set undofile "Allow unlimited undos even after closing.
+
+
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L
+
 set foldmethod=indent
 set nofoldenable
-autocmd BufWritePre * :FixWhitespace
-set nocompatible
-set undofile
 
+"WhiteSpaceFix on saving -TODO - Paste github link
+autocmd BufWritePre * :FixWhitespace
+
+
+"CopyPath - TODO - Paste github link
+let g:copypath_copy_to_unnamed_register = 1
+
+
+"RainbowParanthese - https://github.com/kien/rainbow_parentheses.vim
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
