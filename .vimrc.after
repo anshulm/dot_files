@@ -1,3 +1,9 @@
+"KeyMap Cheat sheet
+"leader fef - indent
+"leader space - :noh
+
+
+
 colorscheme molokai
 let g:copypath_copy_to_unnamed_register = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*spec/cassettes/*,*features/cassettes/*,*/coverage/**,.git
@@ -7,3 +13,23 @@ set go-=L
 set foldmethod=indent
 set nofoldenable
 autocmd BufWritePre * :FixWhitespace
+set nocompatible
+set undofile
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+"IntentGuide - https://github.com/Yggdroot/indentLine
+let g:indentLine_char = 'B'
+"Fix - This
+"autocmd VimEnter,Colorscheme * :hi Conceal ctermfg=28 ctermbg=144
+
+
+
+"KEY-Settings
+"let mapleader = ","
+nnoremap <leader><space> :noh<cr>
+au FocusLost * :wa
+
