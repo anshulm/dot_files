@@ -20,6 +20,7 @@ alias travel="cd ~/../../pdata/Misc/Travel"
 alias vlcclean="cd ~/Library/Preferences && rm -f org.videolan.vlc.LSSharedFileList.plist && rtd"
 alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
 alias s='open -a Sublime\ Text\ 2'
+#alias mvim='open -a MacVim'
 
 #iba Specific aliases, git aliases and functions
 alias seedpaid="curl -u 'api_admin:password' --basic http://localhost:5100/seed && curl  -u 'api_admin:password' --basic http://localhost:5500/seed"
@@ -37,13 +38,13 @@ alias gs="git status"
 alias gpr="git pull --rebase"
 alias gs="git status"
 alias gpr="git pull --rebase"
-alias gglog="git log --graph --pretty=format:'%C(yellow)%h%Creset - %C(red)%d%Creset  %C(cyan)%s%n            %Cgreen%an%C(red) < %ar > - %C(magenta)< %cd >%n'"
+alias gglog="git log --graph --pretty=format:'%C(yellow)%h%Creset - %C(red)%d%Creset  %C(green)%s %C(yellow)||%Creset %C(red)%ar %C(yellow)||%Creset %C(magenta)%cd %C(yellow)||%Creset %C(cyan)%an'"
 alias glog="git log --pretty=format:'%C(yellow)%h%Creset  %C(red)%s%n         %Cgreen%an%Cred  %C(cyan)%cd'"
 alias lol="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
 alias twgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulm@thoughtworks.com'"
 alias persgitconfig="git config user.name 'Anshul Mengi' && git config user.email 'anshulmengi@gmail.com'"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 PROMPT_COMMAND='history -a'
 
