@@ -8,7 +8,7 @@ colorscheme molokai
 set wildignore+=*/tmp/*,*.so,*.swp,*spec/cassettes/*,*features/cassettes/*,*/coverage/**,.git
 set nocompatible "Not Compatible with vi.
 set undofile "Allow unlimited undos even after closing.
-
+set modifiable
 
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
@@ -36,7 +36,9 @@ let g:indentLine_char = '|'
 "Fix - This
 "autocmd VimEnter,Colorscheme * :hi Conceal ctermfg=28 ctermbg=144
 
-
+"Defining Autopairs - https://github.com/vim-scripts/Auto-Pairs
+"TODO - Add | to autopair
+"let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`','|':'|'}
 
 "KEY-Settings
 "let mapleader = ","
